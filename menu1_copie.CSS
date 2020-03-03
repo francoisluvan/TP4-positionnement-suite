@@ -1,0 +1,31 @@
+#flexcontainer{
+  display:flex;
+}
+#flexcontainer div {
+  width : 15%;
+  height: 50px;
+  text-align: center;
+  background-color:grey;
+  -moz-box-shadow: 8px 8px 0px #aaa;
+  -webkit-box-shadow: 8px 8px 0px #aaa;
+  box-shadow: 8px 8px 0px #555;
+}
+
+a {
+    display:block;
+    padding:1em 0 1em 0;
+    color:white;
+    text-decoration: none;
+    width:100%;
+}
+a:hover{
+  background-color: tomato;
+}
+div:first-of-type, div:first-of-type a:hover{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+div:last-of-type, div:last-of-type a:hover{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
